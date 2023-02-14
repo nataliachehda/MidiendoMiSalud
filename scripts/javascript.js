@@ -33,6 +33,4 @@ let imc = peso / (altura * altura);
     calcularPesoObjetivo(peso, altura, 24.9);
 }
 
-calcularPesoObjetivo(altura, 22.5);
-
 //utilicé el toFixed para poner solo dos decimales
