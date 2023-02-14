@@ -15,7 +15,7 @@ while (isNaN(peso) || isNaN(altura)) {
 peso = parseFloat(prompt("¿Cuánto pesas en kilogramos? (utiliza un punto si querés agregar gramos)"));
 altura = parseFloat(prompt("¿Cuál es tu altura en metros? (utiliza un punto si querés agregar centímetros)"));
 if (isNaN(peso) || isNaN(altura)) {
-    alert("Por favor, introduce solo números.");
+    alert("Por favor, introduce números.");
 }
 }
 
