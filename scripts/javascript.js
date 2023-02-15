@@ -9,8 +9,8 @@ function calcularPesoObjetivo(peso, altura, imcObjetivo) {
     }
 }
 
-let peso;
-let altura;
+let peso = NaN;
+let altura= NaN;
 while (isNaN(peso) || isNaN(altura)) {
 peso = parseFloat(prompt("¿Cuánto pesas en kilogramos? (utiliza un punto si querés agregar gramos)"));
 altura = parseFloat(prompt("¿Cuál es tu altura en metros? (utiliza un punto si querés agregar centímetros)"));
