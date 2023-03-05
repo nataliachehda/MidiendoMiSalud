@@ -137,5 +137,5 @@ function RutinasEjercicio(edad) {
     rango = rutinas[3].edad;
     rutina = rutinas[3].recomendacion;
   };
-  alert(`${nombre}, para tu edad de ${edad}años ${rango} ${rutina}`);
+  alert(`${nombre}, para tu edad de ${edad} años ${rango} ${rutina}`);
 };
