@@ -8,7 +8,7 @@ while (isNaN(edad)) {
 }
 
 let sexo;
-while ((sexo = prompt("¿Cuál es tu sexo biológico? elige entre femenino o masculino")) && (sexo !== "femenino" && sexo !== "masculino")) {
+while ((sexo = prompt("¿Cuál es tu sexo biológico? elige entre femenino o masculino")) && (sexo.toLowerCase() !== "femenino" && sexo.toLowerCase() !== "masculino")) {
   alert("Por favor, introduce femenino o masculino");
 }
 
