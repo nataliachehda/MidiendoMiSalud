@@ -1,37 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculador de Indice de Masa Corporal (I.M.C.)</title>
-    <link rel="stylesheet" href="./css/style.css">
+	<title>Mantener la salud - Calculadora de IMC y Porcentaje de grasa corporal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Conociendo tu indice de masa corporal (IMC)</h1>
-    <div>
-        <p>
-            El índice de masa corporal (IMC) es una medida utilizada para determinar si una persona tiene un peso saludable o no. Este índice se calcula dividiendo el peso de una persona en kilogramos por el cuadrado de su altura en metros. Tener conciencia de nuestro IMC es importante porque nos permite tener una idea clara sobre nuestro estado de salud y el riesgo de desarrollar enfermedades relacionadas con el sobrepeso, la obesidad o la desnutrición.
-        </p>
-        <p>
-            Según la Organización Mundial de la Salud (OMS), un IMC entre 18.5 y 24.9 se considera normal. Un IMC por debajo de 18.5 se considera infravalorado y uno por encima de 25 se considera sobrepeso. Un IMC de 30 o más se considera obesidad.
-        </p>      
-        <p>
-            El exceso de peso puede aumentar el riesgo de sufrir enfermedades crónicas como la diabetes, la hipertensión, las enfermedades cardiovasculares y ciertos tipos de cáncer. Por eso, es importante mantener un IMC saludable para prevenir estos problemas de salud.
-        </p>
-        <p>
-            Las personas con IMC bajo pueden tener dificultad para mantener la temperatura corporal, presentar debilidad muscular y fatiga, y estar en mayor riesgo de infecciones y enfermedades debido a un sistema inmunológico debilitado. Además, la falta de nutrientes esenciales puede afectar el desarrollo cognitivo y el rendimiento académico en niños y adolescentes.
-        </p>    
-        <p>    
-            Se debe recordar que el IMC no es una medida perfecta, ya que no tiene en cuenta factores como la edad, el sexo y la cantidad de músculo que una persona tiene. Sin embargo, es una buena manera de tener una idea general sobre nuestro estado de salud y tomar medidas si es necesario.
-        </p>
-        <p>    
-            Es importante llevar una alimentación saludable y hacer ejercicio regularmente para mantener un IMC saludable y una buena salud en general.</p>
-        </p>
+    <h1>Tu salud, tu bienestar - Servicio de información sobre peso saludable</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-title">Indice de masa corporal</div>
+                    <img src="./images/a7af528584b6475633cf9caf0b525518.jpeg" alt="se compara el valor del imc con el estado de salud">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-title">Calculadora de IMC</div>
+					<p>El Índice de Masa Corporal (IMC) es una medida que se utiliza para determinar si una persona tiene un peso saludable en relación con su estatura. Es importante conocer nuestro IMC para asegurarnos de que estamos dentro de un rango saludable y tomar medidas para mejorar nuestra salud en caso de que sea necesario.
+					<br> La fórmula para calcular el IMC es:</p>
+                    <p>IMC = peso (kg) / altura (m)²</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-title">Calculadora de porcentaje de grasa corporal</div>
+					<p>El porcentaje de grasa corporal es otra medida importante para evaluar la salud. La fórmula para calcularlo es diferente para hombres y mujeres. A continuación, te mostramos las fórmulas para ambos:</p>
+					<p>Para hombres:</p>
+					<p>1.20 x IMC + 0.23 x edad - 10.8 x 1 - 5.4</p>
+					<p>Para mujeres:</p>
+					<p>1.20 x IMC + 0.23 x edad - 10.8 x 0 - 5.4</p>
+                    <p> Un rango saludable para los hombres es de un 8-19% de grasa corporal, mientras que para las mujeres es de un 19-31%. Sin embargo, es importante recordar que estos son solo valores promedio y que cada persona es diferente.</p>
+                </div>
+            </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-title">Porcentaje de grasa y sus rangos de normalidad según sexo y edad</div>
+                    <img src="./images/grasa corporal.jpg" alt="valores de porcentaje de grasa corporal segun sexo y edad">
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="./images/a7af528584b6475633cf9caf0b525518.jpeg" alt="se compara el valor del imc con el estado de salud">
-    </div>
-    <script src="./scripts/javascript.js"></script>
+<script src="./scripts/javascript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
