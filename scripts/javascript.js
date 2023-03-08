@@ -69,15 +69,15 @@ function CalcularIMC(imc) {
   
   imcInfo.forEach((nivel, posicion) => {
     if (imc >= 18.5 && imc < 25 && posicion === 1) {
-      alert(`Tu IMC es ${imc.toFixed(2)}, lo que indica que tienes ${nivel.nivel}. Para mantener tu salud, deberías ${nivel.recomendacion}`);
+      alert(`Tu IMC es de ${imc.toFixed(2)}, lo que indica que tienes ${nivel.nivel}. Para mantener tu salud, deberías ${nivel.recomendacion}`);
     } else if (imc >= 25 && imc < 30 && posicion === 2) {
-      alert(`Tu IMC es ${imc.toFixed(2)}, lo que indica que tienes ${nivel.nivel}. Para mejorar tu salud, deberías ${nivel.recomendacion}`);
+      alert(`Tu IMC es de ${imc.toFixed(2)}, lo que indica que tienes ${nivel.nivel}. Para mejorar tu salud, deberías ${nivel.recomendacion}`);
       calcularPesoObjetivo(peso, altura, 22.5);
     } else if (imc >= 30 && posicion === 3) {
-      alert(`Tu IMC es ${imc.toFixed(2)}, lo que indica que tienes ${nivel.nivel}. Para mejorar tu salud, deberías ${nivel.recomendacion}`);
+      alert(`Tu IMC es de ${imc.toFixed(2)}, lo que indica que tienes ${nivel.nivel}. Para mejorar tu salud, deberías ${nivel.recomendacion}`);
       calcularPesoObjetivo(peso, altura, 22.5);
     } else if (imc < 18.5 && posicion === 0) {
-      alert(`Tu IMC es ${imc.toFixed(2)}, lo que indica que tienes ${nivel.nivel}. Para mejorar tu salud, deberías ${nivel.recomendacion}`);
+      alert(`Tu IMC es de ${imc.toFixed(2)}, lo que indica que tienes ${nivel.nivel}. Para mejorar tu salud, deberías ${nivel.recomendacion}`);
       calcularPesoObjetivo(peso, altura, 22.5);
     }
   });
