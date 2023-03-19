@@ -1,4 +1,3 @@
-/* me animé a usar modales */
 const productos = [
   {
   id: 1,
