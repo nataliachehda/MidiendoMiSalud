@@ -79,6 +79,12 @@ h1 {
   margin-bottom: 20px;
 }
 
+@media (max-width: 992px) {
+.col-md-4 {
+  margin-bottom: 40px;
+}
+}
+
 /*formulario de contacto*/
 .formContacto {
   margin-bottom: 100px;
