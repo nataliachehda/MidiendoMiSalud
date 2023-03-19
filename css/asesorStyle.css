@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.addLogo{
+    width: 20px;
+}
+
+.ver-carrito img {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin-right: 50px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.card {
+    background-color: rgb(72, 87, 53);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+}
+
+.card > img {
+    width: 70%;
+    height: auto;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.contenedorModal {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: black;
+    background-color: rgb(115, 143, 78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.contenedorModal::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(115, 143, 78);
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.contenedorModal > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.contenedorModal > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.delete-product {
+    cursor: pointer;
+}
+
+.cantidad-carrito {
+    color: black;
+    background-color: rgb(115, 143, 78);
+    font-size: 20px;
+    right: 50px;
+    padding: 4px;
+    top: 37px;
+    position: absolute;
+    display: none;
+}
+
+.sumar {
+    cursor: pointer;
+}
+
+.restar {
+    cursor: pointer;
+}

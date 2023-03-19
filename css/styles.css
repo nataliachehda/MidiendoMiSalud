@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+  color: white;
+}
+/* El navbar*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  border-radius: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-top: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.navbar-expand-lg .navbar-collapse.show {
+  max-height: 100vh;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #333;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    position: static;
+    background-color: transparent;
+    border: none;
+    max-height: none;
+    transition: none;
+    overflow: visible;
+  }
+  .navbar-expand-lg .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-expand-lg .navbar-nav .nav-item {
+  margin-left: 1rem;
+  }
+}
+
+/* Los elementos del cuerpo de las páginas*/
+
+h1 {
+  color: rgb(99, 143, 43);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: rgb(72, 87, 53);
+  margin: 30px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #000;
+  display: flex;
+  justify-content: center;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/*formulario de contacto*/
+.formContacto {
+  margin-bottom: 100px;
+}
+
+/* la ultima tarjeta del index*/
+.ultima{
+  margin-bottom: 100px;
+}
+
+/* Elementos del footer*/
+.social-icons {
+  margin-top: 20px;
+}
+
+.footerIndex {
+  width: 100%;
+}

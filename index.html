@@ -1,54 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mantener la salud - Calculadora de IMC y Porcentaje de grasa corporal</title>
+	<title>Midiendo mi salud - Calculadora de IMC y Porcentaje de grasa corporal</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Salud es bienestar ♥ Servicio de información sobre peso saludable</h1>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="card">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="/index.html">Midiendo mi salud</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/asesoramiento.html">Asesoramiento</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/blog.html">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="./pages/contacto.html">Contacto</a>
+			</li>
+			</ul>
+		</div>
+		</nav>
+    <h1>Midiendo mi salud</h1>
+	<div>
+		<div class="row justify-content-between">
+			<div class="col-md-4">
+				<div class="card h-100">
 					<div class="card-title">Indice de masa corporal</div>
-                    			<img src="./images/a7af528584b6475633cf9caf0b525518.jpeg" alt="se compara el valor del imc con el estado de salud">
+					<p>El Índice de Masa Corporal (IMC) es una medida que se utiliza para determinar si una persona tiene un peso saludable en relación con su estatura.
+					<br> La fórmula para calcular el IMC es:</p>
+					<p>IMC = peso (kg) / altura (m)²</p>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="card">
+			<div class="col-md-4">
+				<div class="card h-100">
 					<div class="card-title">Calculadora de IMC</div>
-					<p>El Índice de Masa Corporal (IMC) es una medida que se utiliza para determinar si una persona tiene un peso saludable en relación con su estatura. Es importante conocer nuestro IMC para asegurarnos de que estamos dentro de un rango saludable y tomar medidas para mejorar nuestra salud en caso de que sea necesario.
-					<br> La fórmula para calcular el IMC es:</p>
-                    			<p>IMC = peso (kg) / altura (m)²</p>
+					<form>
+						<label for="nombre">Nombre:</label>
+						<input type="text" id="nombre" name="nombre"><br><br>
+						
+						<label for="edad">Edad:</label>
+						<input type="text" id="edad" name="edad"><br><br>
+						
+						<label for="sexo">Sexo:</label>
+						<select id="sexo" name="sexo">
+						<option value="femenino">Femenino</option>
+						<option value="masculino">Masculino</option>
+						</select><br><br>
+						
+						<label for="peso">Peso:</label>
+						<input type="text" id="peso" name="peso"><br><br>
+						
+						<label for="altura">Altura:</label>
+						<input type="text" id="altura" name="altura"><br><br>
+						<input type="submit" value="Calcular">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card h-100">
+					<div class="card-title">Resultado</div>
+					<p id="resultado"></p>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="card">
-					<div class="card-title">Calculadora de porcentaje de grasa corporal</div>
-					<p>El porcentaje de grasa corporal es otra medida importante para evaluar la salud. La fórmula para calcularlo es diferente para hombres y mujeres. A continuación, te mostramos las fórmulas para ambos:</p>
-					<p>Para hombres:</p>
-					<p>1.20 x IMC + 0.23 x edad - 10.8 x 1 - 5.4</p>
-					<p>Para mujeres:</p>
-					<p>1.20 x IMC + 0.23 x edad - 10.8 x 0 - 5.4</p>
-                    			<p> Un rango saludable para los hombres es de un 8-19% de grasa corporal, mientras que para las mujeres es de un 19-31%. Sin embargo, es importante recordar que estos son solo valores promedio y que cada persona es diferente.</p>
-               			</div>
-            		</div>
-       			<div class="col-md-6">
-            			<div class="card">
-               				<div class="card-title">Porcentaje de grasa y sus rangos de normalidad según sexo y edad</div>
-                    			<img src="./images/grasa corporal.jpg" alt="valores de porcentaje de grasa corporal segun sexo y edad">
-                		</div>
-            		</div>
-         	 </div>
-    	 </div>
-<script src="./scripts/javascript.js"></script>
+		<div class="row justify-content-between mt-4">
+			<div class="col-md-4">
+				<div class="card h-100">
+					<div class="card-title">Índice de masa grasa</div>
+					<p>El índice de masa grasa (IMG) se utiliza para estimar el porcentaje de grasa corporal en función de distintos parámetros detallados en la siguiente fórmula:</p>
+					<p>IMG hombres = (1.2 x (circunferencia de cintura en cm / circunferencia de cadera en cm)) + (0.23 x altura en cm) + (0.10 x circunferencia del cuello en cm) - (10.8 x 1) - 5.4</p>
+					<p>IMG mujeres = (1.2 x (circunferencia de cintura en cm / circunferencia de cadera en cm)) + (0.23 x altura en cm) + (0.10 x circunferencia del cuello en cm) - (10.8 x 0) - 5.4</p>
+				</div>
+            </div>
+			<div class="col-md-4">
+				<div class="card h-100">
+					<div class="card-title">Calculadora de índice de masa grasa </div>
+					<form id="form2">
+						<label for="circunferencia-cintura">Circunferencia de la cintura (en cm):</label>
+						<input type="text" id="circunferencia-cintura" name="circunferencia-cintura"><br><br>
+						
+						<label for="circunferencia-cadera">Circunferencia de la cadera (en cm):</label>
+						<input type="text" id="circunferencia-cadera" name="circunferencia-cadera"><br><br>
+						
+						<label for="circunferencia-cuello">Circunferencia del cuello (en cm):</label>
+						<input type="text" id="circunferencia-cuello" name="circunferencia-cuello"><br><br>
+						
+						<label for="altura">Altura (¡Atención! en cm):</label>
+						<input type="text" id="altura2" name="altura"><br><br>
+						
+						<label for="sexo">Sexo:</label>
+						<select id="sexo2" name="sexo">
+							<option value="0">Femenino</option>
+							<option value="1">Masculino</option>
+						</select><br><br>
+						<input type="submit" value="Calcular">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card h-100">
+					<div class="card-title">Resultado</div>
+					<p id="resultado2"></p>
+				</div>
+			</div>
+	</div>
+	<div class="row justify-content-center mt-4">
+		<div class="col-md-4 text-center mt-6">
+			<div class="card ultima">
+				<div class="card-title">¿Deseas generar un archivo de imagen con tus datos?</div>
+			<button id="btnImprimir">Imprimir datos en imagen</button>
+			</div>
+		</div>
+	</div>
+<script src="/scripts/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+<footer class="footerIndex bg-dark text-white py-3">
+	<div class="container p-4 text-center">
+		<div class="row">
+		<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+			<h5 class="text-uppercase">Contacto</h5>
+			<p>
+			Puedes contactarnos por teléfono al +1 234 567 8901 o por correo electrónico a info@midiendomisalud.com
+			</p>
+		</div>
+		<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+			<h5 class="text-uppercase">Enlaces</h5>
+			<ul class="list-unstyled mb-0">
+			<li>
+				<a href="/index.html" class="text-dark">Inicio</a>
+			</li>
+			<li>
+				<a href="/pages/asesoramiento.html">Asesoramiento</a>
+			</li>
+			<li>
+				<a href="/pages/blog.html">Blog</a>
+			</li>
+			<li>
+				<a href="/pages/contacto.html">Contacto</a>
+			</li>
+			</ul>
+		</div>
+		<div  class="col-lg-3 col-md-6 mb-4 mb-md-0">
+			<h5 class="text-uppercase mb-0">Redes sociales</h5>
+			<ul class=" social-icons list-unstyled">
+			<li>
+				<a href="https://www.facebook.com"> <img src="/images/facebook.svg" alt="icono facebook"></a>
+			</li>
+			<li>
+				<a href="https://www.twitter.com"> <img src="/images/twitter.svg" alt="icono twitter"></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com"> <img src="/images/instagram.svg" alt="icono instagram"></a>
+			</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div class="text-center p-3">
+		© 2023 Midiendo mi salud - Natalia Chehda
+	</div>
+</footer>
 </html>
