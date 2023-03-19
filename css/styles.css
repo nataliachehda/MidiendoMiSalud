@@ -73,10 +73,18 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
 .card-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+.card {
+  padding: 0px;
+  margin: 10px;
+}
 }
 
 @media (max-width: 992px) {
