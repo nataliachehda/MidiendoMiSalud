@@ -111,11 +111,11 @@ const colocarCarrito = () => {
         <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p>${product.precio} $</p>
-        <span class="restar"><img src="/images/subtract.png" class="addLogo"></img></span>
+        <span class="restar"><img src="../images/subtract.png" class="addLogo"></img></span>
         <p>${product.cantidad}</p>
-        <span class="sumar"><img src="/images/add.png" class="addLogo"></img></span>
+        <span class="sumar"><img src="../images/add.png" class="addLogo"></img></span>
         <p>Subtotal: ${product.cantidad * Number(product.precio.replace("$", ""))} $</p>
-        <span class="delete-product"> <img src="/images/trash.png" class="addLogo"></img> </span>`;
+        <span class="delete-product"> <img src="../images/trash.png" class="addLogo"></img> </span>`;
 
     modalContenedor.append(carritoContent);
 
