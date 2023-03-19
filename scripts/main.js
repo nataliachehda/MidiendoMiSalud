@@ -73,7 +73,7 @@ formulario2.addEventListener('submit', (e) => {
 
 /*Aquí trabaje con el canvas para crear un archivo de imagen. 
 Como dependo de las entradas del prompt del usuario, no puedo anticipar cuantos caracteres poner en cada línea
-del archivo jpg, por lo que a veces se cortan las palabras en lugares erroneos.*/
+del archivo jpg, por lo que a veces en el archivo descargable se cortan las palabras en lugares erroneos.*/
 function imprimir() {
   let nombre = document.getElementById("nombre").value;
   let edad = document.getElementById("edad").value;
