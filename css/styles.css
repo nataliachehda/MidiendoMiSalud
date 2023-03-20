@@ -102,11 +102,6 @@ h1 {
   .formContacto{
 margin-bottom: 40px;
   }
-  @media (max-width: 880px){
-    .mb-4, .my-4 {
-      margin-bottom: 0px;
-  }
-  }
 }
 
 /* la ultima tarjeta del index*/
