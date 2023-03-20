@@ -215,6 +215,7 @@ body {
     transform: none;
     margin: 0;
     padding: 0;
+    display: none;
     }
 
     .contenedorModal>.modal-header {
@@ -238,12 +239,12 @@ body {
     width: 90%;
     }
 
-    .contenedorModal>.modal-content img {
+    .modal-content img {
     width: 80px;
     height: 80px;
     }
 
-    .contenedorModal>.modal-content h3 {
+    .modal-content h3 {
     font-size: 18px;
     }
 
@@ -253,4 +254,7 @@ body {
     width: 20px;
     height: 20px;
     }
+
+
+    
 }
