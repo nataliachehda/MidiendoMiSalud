@@ -205,3 +205,75 @@ body {
 .restar {
     cursor: pointer;
 }
+
+@media (max-width: 880px) {
+    #contenedorModal {
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .contenedorModal>.modal-header {
+    padding: 10px;
+    }
+
+    .contenedorModal>.modal-header-title {
+    font-size: 24px;
+    }
+
+    .contenedorModal>.modal-header-button {
+    font-size: 24px;
+    }
+
+.contenedorModal>.modal-content {
+    align-items: center;
+    justify-items: right;
+    margin: 10px;
+    width: 90%;
+    }
+
+    .contenedorModal>.modal-content img {
+    width: 80px;
+    height: 80px;
+    }
+
+    .contenedorModal>.modal-content h3 {
+    font-size: 18px;
+    }
+
+    .contenedorModal>.modal-content p {
+    font-size: 16px;
+    }
+
+    .contenedorModal>.modal-content .restar,
+    .contenedorModal>.modal-content .sumar,
+    .contenedorModal>.modal-content .delete-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .contenedorModal>.modal-content .restar img,
+    .contenedorModal>.modal-content .sumar img,
+    .contenedorModal>.modal-content .delete-product img {
+    width: 20px;
+    height: 20px;
+    }
+
+    .contenedorModal>.modal-content .restar,
+    .contenedorModal>.modal-content .sumar {
+    font-size: 20px;
+    }
+
+    .contenedorModal>.modal-content .delete-product {
+    font-size: 24px;
+    }
+
+    .contenedorModal>.total-content {
+    font-size: 20px;
+    }
+}
