@@ -239,7 +239,7 @@ body {
     width: 90%;
     }
 
-    .modal-content img {
+    .contenedorModal > div > img {
     width: 80px;
     height: 80px;
     }
@@ -255,6 +255,8 @@ body {
     height: 20px;
     }
 
-
-    
+    .total-content {
+        font-size: 17px;
+        text-align: center;
+    }
 }
