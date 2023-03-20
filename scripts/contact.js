@@ -21,6 +21,13 @@ $(document).ready(function() {
   
       form.reset();
   
-      alert('El formulario ha sido guardado en el LocalStorage.');
+      Swal.fire({
+        title: 'Listo!',
+        text: 'Tu mensaje fue enviado a tu LocalStorage',
+        imageUrl: '../images/localStorage.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
     });
   });
