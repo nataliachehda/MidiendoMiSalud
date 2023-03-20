@@ -1,4 +1,3 @@
-/*Usé toggle de la biblioteca jQuery para contraer-expandir el texto. Intente con botones y no me salió*/
 $(document).ready(function () {
   $('.contraerExpandir').click(function () {
       let colapsando = $(this).attr('href');
