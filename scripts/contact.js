@@ -21,6 +21,12 @@ $(document).ready(function() {
   
       form.reset();
   
-      alert('El formulario ha sido guardado en el LocalStorage.');
+      swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'El mensaje ha sido enviado',
+        showConfirmButton: false,
+        timer: 1500
+      });
     });
   });

@@ -76,14 +76,19 @@ productos.forEach((product) => {
       carritoContador();
       guardarLocal();
     }
+    if (carritoVisible) colocarCarrito();
   });
+
 });
+
+let carritoVisible = false;
 
 const guardarLocal = () => {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
 const colocarCarrito = () => {
+  carritoVisible= true;
   modalContenedor.innerHTML = "";
   modalContenedor.style.display = "grid";
   const modalHeader = document.createElement("div");
@@ -99,6 +104,7 @@ const colocarCarrito = () => {
 
   modalbutton.addEventListener("click", () => {
     modalContenedor.style.display = "none";
+    carritoVisible= false;
   });
 
   modalHeader.append(modalbutton);
@@ -139,12 +145,11 @@ const colocarCarrito = () => {
     });
 });
 
-  const total = carrito.reduce((acc, el) => acc + parseFloat(el.precio.replace('$','')) * el.cantidad, 0);
+const total = carrito.reduce((acc, el) => acc + parseFloat(el.precio.replace('$','')) * el.cantidad, 0);
   const totalCompra = document.createElement("div");
   totalCompra.className = "total-content";
   totalCompra.innerHTML = `Total a pagar: ${total} $`;
   modalContenedor.append(totalCompra);
-  
 };
 
 verCarrito.addEventListener("click", colocarCarrito);
