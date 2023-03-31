@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     // Enviar los datos a Getform
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://getform.io/f/<tu-endpoint>');
+    xhr.open('GET', 'https://getform.io/f/1477141b-ff3f-4df9-9cc8-c7e636f375af');
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4 && xhr.status === 200) {
