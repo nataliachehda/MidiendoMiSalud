@@ -206,6 +206,19 @@ body {
     cursor: pointer;
 }
 
+.enviar-link-btn {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
 @media (max-width: 880px) {
     #contenedorModal {
     width: 100%;
@@ -258,5 +271,8 @@ body {
     .total-content {
         font-size: 17px;
         text-align: center;
+    }
+    .enviar-link-btn {
+        bottom: 80px;
     }
 }

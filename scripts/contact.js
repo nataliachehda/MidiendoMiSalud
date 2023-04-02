@@ -1,34 +1,34 @@
+//al formulario lo envio a getForm, por eso, tarda un rato en realizarse el envío
+
 $(document).ready(function() {
   const form = document.querySelector('#formContacto');
+  const submitButton = document.querySelector('#enviar');
+  
   form.addEventListener('submit', function(event) {
     event.preventDefault();
-
-    const nombre = document.querySelector('#nombre').value;
-    const email = document.querySelector('#email').value;
-    const mensaje = document.querySelector('#mensaje').value;
-
-    // Enviar los datos a Getform
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://getform.io/f/1477141b-ff3f-4df9-9cc8-c7e636f375af');
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        // Si la solicitud se envió correctamente, mostrar un mensaje de éxito
+    
+    const formData = new FormData(form);
+    
+    fetch(form.action, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
         swal.fire({
-          position: 'top-end',
+          position: 'top',
           icon: 'success',
           title: 'El mensaje ha sido enviado',
           showConfirmButton: false,
           timer: 1500
         });
-
         form.reset();
+      } else {
+        throw new Error('Error al enviar el formulario');
       }
-    };
-    xhr.send(JSON.stringify({
-      nombre,
-      email,
-      mensaje
-    }));
+    })
+    .catch(error => {
+      console.error(error);
+    });
   });
 });

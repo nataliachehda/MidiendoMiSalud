@@ -109,6 +109,43 @@ const colocarCarrito = () => {
 
   modalHeader.append(modalbutton);
 
+  if (carrito.length > 0) {
+    const enviarLinkBtn = document.createElement("button");
+    enviarLinkBtn.innerText = "Enviar link de pago";
+    enviarLinkBtn.className = "enviar-link-btn";
+    modalContenedor.append(enviarLinkBtn);
+    enviarLinkBtn.addEventListener("click", () => {
+      swal.fire({
+        title: "Ingrese su correo electrónico",
+        input: "email",
+        inputAttributes: {
+          required: "true",
+          placeholder: "ejemplo@correo.com",
+        },
+        confirmButtonText: "Enviar",
+        showLoaderOnConfirm: true,
+        preConfirm: (email) => {
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              resolve();
+            }, 2000);
+          });
+        },
+        allowOutsideClick: () => !Swal.isLoading(),
+      }).then(() => {
+        swal.fire({
+          title: "Se le enviará el link de pago a su correo electrónico.",
+          icon: "success",
+        });
+
+        carrito = [];
+        carritoContador();
+        guardarLocal();
+        colocarCarrito();
+      });
+    });
+  }
+
   carrito.forEach((product) => {
     let carritoContent = document.createElement("div");
     carritoContent.className = "modal-content";

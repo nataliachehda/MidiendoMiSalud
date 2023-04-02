@@ -123,6 +123,14 @@ function imprimir() {
   link.download = "tuFichaDeSalud.jpg";
   link.href = image;
   link.click();
+  swal.fire({
+    title: '¡Listo!',
+    text: 'Ya se descargó tu ficha',
+    imageUrl: '../images/tuFichaDeSalud.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+  })
 }
 
 let botonImprimir = document.querySelector("#btnImprimir");
