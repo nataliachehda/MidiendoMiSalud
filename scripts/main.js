@@ -126,7 +126,7 @@ function imprimir() {
   swal.fire({
     title: '¡Listo!',
     text: 'Ya se descargó tu ficha',
-    imageUrl: '../images/tuFichaDeSalud.jpg',
+    imageUrl: 'https://picsum.photos/id/56/200/300',
     imageWidth: 400,
     imageHeight: 200,
     imageAlt: 'Custom image',
