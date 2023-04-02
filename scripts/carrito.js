@@ -111,7 +111,7 @@ const colocarCarrito = () => {
 
   if (carrito.length > 0) {
     const enviarLinkBtn = document.createElement("button");
-    enviarLinkBtn.innerText = "Enviar link de pago";
+    enviarLinkBtn.innerText = "Link de pago";
     enviarLinkBtn.className = "enviar-link-btn";
     modalContenedor.append(enviarLinkBtn);
     enviarLinkBtn.addEventListener("click", () => {

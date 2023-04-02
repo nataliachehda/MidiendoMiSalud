@@ -123,14 +123,20 @@ function imprimir() {
   link.download = "tuFichaDeSalud.jpg";
   link.href = image;
   link.click();
-  swal.fire({
-    title: '¡Listo!',
-    text: 'Ya se descargó tu ficha',
-    imageUrl: 'https://picsum.photos/id/56/200/300',
-    imageWidth: 400,
-    imageHeight: 200,
-    imageAlt: 'Custom image',
-  })
+  Toastify({
+    text: "Tu ficha se ha descargado",
+    duration: 3000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "top",
+    position: "center",
+    stopOnFocus: true,
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function(){}
+  }).showToast();
 }
 
 let botonImprimir = document.querySelector("#btnImprimir");
