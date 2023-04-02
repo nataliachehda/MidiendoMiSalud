@@ -142,6 +142,8 @@ const colocarCarrito = () => {
         carritoContador();
         guardarLocal();
         colocarCarrito();
+        modalContenedor.style.display = "none";
+        carritoVisible= false;
       });
     });
   }
@@ -187,6 +189,7 @@ const total = carrito.reduce((acc, el) => acc + parseFloat(el.precio.replace('$'
   totalCompra.className = "total-content";
   totalCompra.innerHTML = `Total a pagar: ${total} $`;
   modalContenedor.append(totalCompra);
+  
 };
 
 verCarrito.addEventListener("click", colocarCarrito);
