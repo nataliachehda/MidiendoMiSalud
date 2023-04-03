@@ -26,7 +26,7 @@ axios.get('https://recetas-en-espanol.p.rapidapi.com/api/recipes', {
 })
   .then(response => {
     const recetas = response.data;
-    const posiciones = [23, 9, 30];
+    const posiciones = [24, 6, 31];
     posiciones.forEach(posicion => {
       const receta = recetas[posicion];
       const card = document.createElement("div");
