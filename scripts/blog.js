@@ -44,6 +44,7 @@ axios.get('https://recetas-en-espanol.p.rapidapi.com/api/recipes', {
       const recipeLink = document.createElement("a");
       recipeLink.href = `https://www.recetasgratis.net/${receta.slug}`;
       recipeLink.textContent = "Ver receta";
+      recipeLink.classList.add("text-warning", "font-weight-bold");
       cardBody.appendChild(title);
       cardBody.appendChild(recipeLink);
       card.appendChild(img);
