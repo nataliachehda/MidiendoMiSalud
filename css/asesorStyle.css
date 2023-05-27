@@ -4,7 +4,7 @@ body {
 }
 
 .titleServicios {
-    color: rgb(99, 143, 43);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-bottom: 20px;
     margin-top: 100px;
@@ -91,7 +91,7 @@ body {
 }
 
 .card {
-    background-color: rgb(72, 87, 53);
+    background-color: rgb(66, 103, 206);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
@@ -149,7 +149,7 @@ body {
 .modal-header {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(115, 143, 78);
+    background-color: rgb(66, 103, 206);
     color: #fff;
     width: 100%;
 }
@@ -189,7 +189,7 @@ body {
 
 .cantidad-carrito {
     color: black;
-    background-color: rgb(115, 143, 78);
+    background-color: rgb(66, 103, 206);
     font-size: 20px;
     right: 50px;
     padding: 4px;
